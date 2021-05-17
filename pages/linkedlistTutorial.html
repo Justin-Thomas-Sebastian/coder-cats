@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <style>
+        .tutorialRow {
+            flex-direction: column;
+        }
+
+        .tutorialRow p {
+            margin: 30px;
+            line-height: 30px;
+        }
+
+        .tutorialRow h3 {
+            margin-top: 50px;
+        }
+
+        .tutorialRow ul {
+            margin: 30px;
+        }
+
+        .tutorialRow a {
+            
+            color: black;
+        }
+
+        @media only screen and (max-width: 480px){
+            .tutorialRow {
+                flex-grow: 1;
+            }
+
+            .tutorialRow p {
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    
+    <main class="tutorialContainer">
+        <div class="tutorialRow">
+            <h1>Linked List</h1>
+            <p>A linked list is a data structure where data is stored on nodes that connect to one another sequentially but not contiguous in memory. Each node points to the next element in the structure. A linked list can either be singly linked, wherein each node only points to the next node after it, or double linked, wherein each node points to both the previous and next node. An advantage to using a linked list is that inserting or deleting elements at the beginning or the end of the data set is very fast. A disadvantage is that random access is not allowed. In order to retrieve an element, the entire list has to be traversed until the element is found. The following code snippet shows how to declare and initialize a linked list in C#, along with some common methods used.</p>
+          
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Tutorials/LinkedListMobile.PNG">
+                <source media="(min-width: 481px)" srcset="../images/Tutorials/LinkedList.PNG">
+                <img src="../images/Tutorials/LinkedList.PNG" alt="">
+
+            </picture>
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-5.0" target="_blank">Microsoft Docs - LinkedList</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-5.0#properties" target="_blank">Microsoft Docs - LinkedList Properties</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.linkedlist-1?view=net-5.0#methods" target="_blank">Microsoft Docs - LinkedList Methods</a></li>
+            </ul>
+            <small><a href="../downloads/LinkedList Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   
+    <script>
+        $( function() {
+          $( "#tabs" ).tabs();
+        } );
+
+    </script>
+    <style>
+        .productContainer a {
+            color: white;  /* Counteract jquery ui-widget styling*/
+        }
+    </style>
+
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    <div class="productsContainer">
+
+        <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Shirts</a></li>
+              <li><a href="#tabs-2">Hats</a></li>
+              <li><a href="#tabs-3">Mugs</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                <div class="productContainer">
+                    <img src="../images/Products/white_shirt.jpg" alt="">
+                    <p>&#36;20</p>
+                    <a href="#">Buy</a>
+                </div>
+                <div class="productContainer">
+                    <img src="../images/Products/black_shirt.jpg" alt="">
+                    <p>&#36;20</p>
+                    <a href="#">Buy</a>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <div class="productContainer">
+                    <img src="../images/Products/hat1.jpg" alt="">
+                    <p>&#36;25</p>
+                    <a href="#">Buy</a>
+                </div>
+                <div class="productContainer">
+                    <img src="../images/Products/hat2.jpg" alt="">
+                    <p>&#36;25</p>
+                    <a href="#">Buy</a>
+                </div>
+            </div>
+            <div id="tabs-3">
+                <div class="productContainer">
+                    <img src="../images/Products/mug1.jpg" alt="">
+                    <p>&#36;10</p>
+                    <a href="#">Buy</a>
+                </div>
+                <div class="productContainer">
+                    <img src="../images/Products/mug2.jpg" alt="">
+                    <p>&#36;10</p>
+                    <a href="#">Buy</a>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    
+
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

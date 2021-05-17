@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:400px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:401px) and (max-width:1100px)">
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    <main class="tutorialContainer">
+        <div class="tutorialRow">
+            <div class="tutorialCard">
+                <h3>Arrays</h3>
+                <p>Learn more about the Array data structure and how to use them in C#</p>
+                <a href="arraysTutorial.html">Learn More</a>
+            </div>
+            <div class="tutorialCard">
+                <h3>Linked List</h3>
+                <p>Learn more about the Linked List data structure and how to use them in C#</p>
+                <a href="linkedlistTutorial.html">Learn More</a>
+            </div>
+            <div class="tutorialCard">
+                <h3>Hash Table</h3>
+                <p>Learn more about the Hash Table data structure and how to use them in C#</p>
+                <a href="hashtableTutorial.html">Learn More</a>
+            </div>
+            <div class="tutorialCard">
+                <h3>Responsive HTML Images</h3>
+                <p>Learn different ways to handle responsive images in HTML</p>
+                <a href="responsiveTutorial.html">Learn More</a>
+            </div>
+            <div class="tutorialCard">
+                <h3>Read/Write Files in C#</h3>
+                <p>Learn how to use basic file input and output functions in C#</p>
+                <a href="readWriteTutorial.html">Learn More</a>
+            </div>
+            <div class="tutorialCard">
+                <h3>Flexbox</h3>
+                <p>Learn the basics of CSS flexbox</p>
+                <a href="flexboxTutorial.html">Learn More</a>
+            </div>
+        </div>
+
+    </main>
+    <div class="videoContainer">
+        <iframe
+            src="https://www.youtube.com/embed/bum_19loj9A" allow="picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

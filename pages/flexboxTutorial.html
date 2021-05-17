@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <style>
+        .tutorialRow {
+            flex-direction: column;
+        }
+
+        .tutorialRow p {
+            margin: 30px;
+            line-height: 30px;
+        }
+
+        .tutorialRow h3 {
+            margin-top: 50px;
+        }
+
+        .tutorialRow ul {
+            margin: 30px;
+        }
+
+        .tutorialRow a {
+            
+            color: black;
+        }
+
+        @media only screen and (max-width: 480px){
+            .tutorialRow {
+                flex-grow: 1;
+            }
+
+            .tutorialRow p {
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+
+        .flexColumnExampleContainer {
+            display: flex;
+            background-color: gray;
+            width: 300px;
+            height: 400px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flexColumnExample {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+        .flexRowExampleContainer {
+            display: flex;
+            background-color: gray;
+            width: 350px;
+            height: 400px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flexRowExample {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    <main class="tutorialContainer">
+        <div class="tutorialRow">
+            <h1>Flexbox Basics</h1>
+            <p>Flexbox is a CSS display layout method that allows for easy arranging of components in rows or columns. Flexbox is an easy to use, reliable and cross-browser tool for creating a layout for a webpage. It is able to achieve the same functionality as floats and positions while having added features that make a variety of designs easier to implement.</p>
+            <p>The following syntax sets a <b>section</b> tag as a flex container which in turn makes its child items flex-items:</p>
+
+            <img src="../images/Tutorials/flex.PNG" alt="CSS code">
+
+            <p>The following CSS code shows flexbox utilizing a "column" <b>flex-direction.</b> The <b>justify-content</b> and <b>align-items</b> properties sets the alignment of the flex items along the main-axis and the cross-axis, respectively. </p>
+            <img src="../images/Tutorials/FlexColumn.PNG" alt="CSS code">
+            <p>RESULT:</p>
+            <div class="flexColumnExampleContainer">
+                <div class="flexColumnExample"></div>
+                <div class="flexColumnExample"></div>
+                <div class="flexColumnExample"></div>
+            </div>
+
+            <p>The following CSS code shows flexbox utilizing a "row" <b>flex-direction. </b>The directional alignment of the cross-axis and the main-axis changes based on the flex-direction property.</p>
+            <img src="../images/Tutorials/FlexRow.PNG" alt="CSS code">
+            <p>RESULT:</p>
+            <div class="flexRowExampleContainer">
+                <div class="flexRowExample"></div>
+                <div class="flexRowExample"></div>
+                <div class="flexRowExample"></div>
+            </div>
+            <p>For more in-depth information regarding the various flexbox properties, refer to the resources below.</p>
+            
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox" target="_blank">MDN - Flexbox</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS Tricks - A Complete Guide to Flexbox</a></li>
+                <li><a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3Schools - CSS Flexbox</a></li>
+            </ul>
+            <small><a href="../downloads/Flexbox Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

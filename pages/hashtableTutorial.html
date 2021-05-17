@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <style>
+        .tutorialRow {
+            flex-direction: column;
+        }
+
+        .tutorialRow p {
+            margin: 30px;
+            line-height: 30px;
+        }
+
+        .tutorialRow h3 {
+            margin-top: 50px;
+        }
+
+        .tutorialRow ul {
+            margin: 30px;
+        }
+
+        .tutorialRow a {
+            
+            color: black;
+        }
+
+        @media only screen and (max-width: 480px){
+            .tutorialRow {
+                flex-grow: 1;
+            }
+
+            .tutorialRow p {
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    
+    <main class="tutorialContainer">
+        <div class="tutorialRow">
+            <h1>Hash Table</h1>
+            <p>A hash table is a data structure where data is stored in key/value pairs. The hash table uses a hash function, which is a mathematical operation that computes an index from the key. A corresponding value to the key is then stored in that index. The value can be accessed and manipulated through the assigned key. An advantage of using a hash table is that it is very efficient for accessing, adding, and deleting data. A disadvantage is that a hash function can sometimes generate the same index for two different keys, resulting in a collision. There are various ways to handle a collision. One way to accommodate collisions is to have each index or "bucket" be a linked list that can store data elements that happen to have the same hash code. The following example shows how to initialize a hash table in C# along with some common methods.</p>
+          
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Tutorials/HashTableMobile.PNG">
+                <source media="(min-width: 481px)" srcset="../images/Tutorials/HashTable.PNG">
+                <img src="../images/Tutorials/HashTable.PNG" alt="C# Code">
+            </picture>
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-5.0" target="_blank">Microsoft Docs - Hashtable</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-5.0#properties" target="_blank">Microsoft Docs - Hashtable Properties</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.collections.hashtable?view=net-5.0#methods" target="_blank">Microsoft Docs - Hashtable Methods</a></li>
+            </ul>
+            <small><a href="../downloads/Hashtable Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

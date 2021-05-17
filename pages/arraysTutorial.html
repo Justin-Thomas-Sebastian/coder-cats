@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <style>
+
+        .tutorialRow {
+            flex-direction: column;
+        }
+
+        .tutorialRow p {
+            margin: 30px;
+            line-height: 30px;
+        }
+
+        .tutorialRow h3 {
+            margin-top: 50px;
+        }
+
+        .tutorialRow ul {
+            margin: 30px;
+        }
+
+        .tutorialRow a {
+            
+            color: black;
+        }
+
+        @media only screen and (max-width: 480px){
+            .tutorialRow {
+                flex-grow: 1;
+            }
+
+            .tutorialRow p {
+                font-size: .9em;
+                line-height: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    
+    <main class="tutorialContainer">
+        <div class="tutorialRow">
+            <h1>Arrays</h1>
+            <p>An array is a data structure that stores a collection of items of the same data type. The size of the array is fixed when it is initialized. An array uses indexes to access its elements. The first element in the array starts at index 0 for most programing languages. An advantage to using an array is that retrieving elements is very fast if its index is known. A disadvantage is that the insertion and deletion of elements is not as efficient compared to other data structures. Because of its fixed size, adding additional elements past the maximum size necessitates copying the array into an entirely new array with a larger capacity. This process of dynamically resizing the array is abstracted using an ArrayList/Vector. The following code snippet is an example of how to declare and initialize an array in C#.</p>
+          
+            <picture>
+                <source media="(max-width: 480px)" srcset="../images/Tutorials/ArraysMobile.PNG">
+                <source media="(min-width: 481px)" srcset="../images/Tutorials/Arrays.PNG">
+                <img src="../images/Tutorials/Arrays.PNG" alt="">
+
+            </picture>
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/" target="_blank">Microsoft Docs - Arrays</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays" target="_blank">Microsoft Docs - Using foreach with arrays</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/arrays/arrays-as-objects" target="_blank">Microsoft Docs - Arrays as Objects</a></li>
+            </ul>
+            <small><a href="../downloads/Arrays Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

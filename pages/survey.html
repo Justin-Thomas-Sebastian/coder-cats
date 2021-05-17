@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:400px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:401px) and (max-width:1100px)">
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+        </div>
+    </header>
+
+    <div class="surveyContainer">
+        <h2>Tell us more about yourself!</h2>
+        <hr>
+        <form class="surveyForm" action="welcome.html" onsubmit="return validateForm('question5');">
+            <div id="question1" class="surveyQuestion">
+                <p>How did you hear about Coder Cats?</p>
+                <div>
+                    <input type="radio" id="question1Choice1" value="0" name="question1">
+                    <label for="question1Choice1">Search Engine</label>
+                </div>
+                <div>
+                    <input type="radio" id="question1Choice2" value="1" name="question1">
+                    <label for="question1Choice2">Social Media</label>
+                </div>
+                <div>
+                    <input type="radio" id="question1Choice3" value="2" name="question1">
+                    <label for="question1Choice3">Blog or Article</label>
+                </div>
+                <div>
+                    <input type="radio" id="question1Choice4" value="3" name="question1">
+                    <label for="question1Choice4">Recommended by Friend</label>
+                </div>
+                <div>
+                    <input type="radio" id="question1Choice5" value="4" name="question1">
+                    <label for="question1Choice5">Other</label>
+                    <input type="text">
+                </div>
+                <button class="nextButton" type="button" onclick="showNext('question1','question2');">Next</button>
+                <small class="surveyError">Please select one</small>
+            </div>
+
+            <div id="question2" class="surveyQuestion">
+                <p>How long have you been programming?</p>
+                <div>
+                    <input type="radio" id="question2Choice1" value="0" name="question2">
+                    <label for="question1Choice1"> Less than a year</label>
+                </div>
+                <div>
+                    <input type="radio" id="question2Choice2" value="1" name="question2">
+                    <label for="question1Choice2">1-2 Years</label>
+                </div>
+                <div>
+                    <input type="radio" id="question2Choice3" value="2" name="question2">
+                    <label for="question1Choice3">3-5 Years</label>
+                </div>
+                <div>
+                    <input type="radio" id="question2Choice4" value="3" name="question2">
+                    <label for="question1Choice4">5-10 Years</label>
+                </div>
+                <div>
+                    <input type="radio" id="question2Choice5" value="4" name="question2">
+                    <label for="question1Choice5">Over 10 years</label>
+                </div>
+                <button class="nextButton" type="button" onclick="showNext('question2','question3');">Next</button>
+                <small class="surveyError">Please select one</small>
+            </div>
+
+            <div id="question3" class="surveyQuestion">
+                <p>What is your preferred programming language?</p>
+                <div>
+                    <input type="radio" id="question3Choice1" value="0" name="question3">
+                    <label for="question3Choice1">JavaScript</label>
+                </div>
+                <div>
+                    <input type="radio" id="question3Choice2" value="1" name="question3">
+                    <label for="question3Choice2">Java</label>
+                </div>
+                <div>
+                    <input type="radio" id="question3Choice3" value="2" name="question3">
+                    <label for="question3Choice3">C#</label>
+                </div>
+                <div>
+                    <input type="radio" id="question3Choice4" value="3" name="question3">
+                    <label for="question3Choice4">Python</label>
+                </div>
+                <div>
+                    <input type="radio" id="question3Choice5" value="4" name="question3">
+                    <label for="question3Choice5">C++</label>
+                </div>
+                <div>
+                    <input type="radio" id="question3Choice6" value="5" name="question3">
+                    <label for="question3Choice6">Other</label>
+                    <input type="text">
+                </div>
+                <button class="nextButton" type="button" onclick="showNext('question3','question4');">Next</button>
+                <small class="surveyError">Please select one</small>
+            </div>
+
+            <div id="question4" class="surveyQuestion">
+                <p>What area are you most interested in?</p>
+                <div>
+                    <input type="radio" id="question4Choice1" value="0" name="question4">
+                    <label for="question4Choice1">Web Development</label>
+                </div>
+                <div>
+                    <input type="radio" id="question4Choice2" value="1" name="question4">
+                    <label for="question4Choice2">Mobile Development</label>
+                </div>
+                <div>
+                    <input type="radio" id="question4Choice3" value="2" name="question4">
+                    <label for="question4Choice3">Machine Learning</label>
+                </div>
+                <div>
+                    <input type="radio" id="question4Choice4" value="3" name="question4">
+                    <label for="question4Choice4">Database Development</label>
+                </div>
+                <div>
+                    <input type="radio" id="question4Choice5" value="4" name="question4">
+                    <label for="question4Choice5">Video Game Development</label>
+                </div>
+                <div>
+                    <input type="radio" id="question4Choice6" value="5" name="question4">
+                    <label for="question4Choice5">Other</label>
+                    <input type="text">
+                </div>
+                <button class="nextButton" type="button" onclick="showNext('question4','question5');">Next</button>
+                <small class="surveyError">Please select one</small>
+            </div>
+
+            <div id="question5" class="surveyQuestion">
+                <p>Do you prefer cats or dogs?</p>
+                <div>
+                    <input type="radio" id="question5Choice1" value="0" name="question5">
+                    <label for="question5Choice1">CATS!</label>
+                </div>
+                <div>
+                    <input type="radio" id="question5Choice2" value="1" name="question5">
+                    <label for="question5Choice2">...dogs</label>
+                </div>
+                <div>
+                    <input id="surveySubmit" type="submit" name="surveySubmit" value="Submit">
+                </div>
+                <small class="surveyError">Please select one</small>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+       function showNext(currentQuestion, nextQuestion) {
+           if(isOneSelected(currentQuestion)){
+               document.getElementById(nextQuestion).previousElementSibling.style.display = "none";
+               document.getElementById(nextQuestion).style.display = "block"
+           } else {
+               showError(currentQuestion);
+           }
+           
+       }
+
+       function isOneSelected(currentQuestion) {
+           let choices = document.getElementsByName(currentQuestion);
+           for(let i = 0; i < choices.length; i++){
+               if(choices[i].checked){
+                   return true;
+               } 
+           }
+           return false;
+       }
+
+       function showError(currentQuestion){
+            document.getElementById(currentQuestion).getElementsByTagName("small")[0].style.display = "block";
+       }
+
+       function validateForm(currentQuestion){
+           if(isOneSelected(currentQuestion)){
+                return true;
+           }
+           showError(currentQuestion);
+           return false;
+       }
+    </script>
+</body>
+</html>

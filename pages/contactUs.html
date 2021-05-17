@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+
+    <style>
+        body {
+             color: black;
+        }
+    </style>
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    <div class="contactContainer">
+        <h1>Contact Us!</h1>
+        <form action="index.html">
+            <div class="contactInputControl">
+                <label for="contactFirstName">First Name</label>
+                <input type="text" name="contactFirstName" required>
+            </div>
+
+            <div class="contactInputControl">
+                <label for="contactLastName">Last Name</label>
+                <input type="text" name="contactLastName" required>
+            </div>
+
+            <div class="contactInputControl">
+                <label for="contactFirstName">Email</label>
+                <input type="email" name="contactEmail" required>
+            </div>
+
+            <div class="contactInputControl">
+                <label for="contactMessage">Message</label>
+                <textarea name="contactMessage"></textarea>
+            </div>
+
+            <input id="contactSubmit" type="submit" value="Send">
+        </form>
+
+        <div class="clubContactInfo">
+                <ul>
+                    <li>Mailing Address: <b>555 Century Road, El Paso, TX 79916</b></li>
+                    <li>Phone Number: <b>915-000-000</b></li>
+                    <li>Email: <b>contact@codercats.io</b></li>
+                </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+    
+
+    <script src="../javascript/app.js"></script>
+</body>
+</html>

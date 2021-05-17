@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Coder Cats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Media Queries-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+</head>
+<body>
+    <header class="mainHeader">
+        <div class="mobileNav">
+            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
+            <nav class="mobileNavBar">
+                <ul class="mobileNavBarLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="signInSection">
+            <a href="signIn.html" class="signInBtn">Sign In</a>
+            <div class="newUserText">New user?</div>
+            <a href="signUp.html" class="signUpLink">Sign Up</a>
+        </div>
+    </header>
+
+    <nav id="desktopNavContainer">
+        <ul class="desktopNavBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <div id="stickyBuffer"></div>
+
+    <h1 style="color:white; text-align: center; margin-top: 100px" >Upcoming Events</h1>
+
+    <div class="calendarContainer">
+        <iframe src="https://calendar.google.com/calendar/embed?src=d7jiq3oct1mi51av6m9pcajsp8%40group.calendar.google.com&ctz=America%2FDenver" style="border: 0" width="600" height="450" frameborder="0" scrolling="no"></iframe>
+
+        <div class="searchContainer">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search Upcoming Events">
+
+            <ul id="myUL">
+                <li><a href="../downloads/Coder Cats Hackathon 2020.pdf" target="_blank">Dec 7 - Hackathon</a></li>
+                <li><a href="../downloads/Coder Cats Cyberpunk 2077.pdf" target="_blank">Dec 10 - Cyberpunk 2077 release party</a></li>
+                <li><a href="../downloads/Coder Cats Webinar.pdf" target="_blank">Dec 11 - Webinar</a></li>
+                <li><a href="../downloads/Coder Cats Christmas Potluck.pdf" target="_blank">Dec 20 - Christmas Potluck</a></li>
+                <li><a href="../downloads/Coder Cats Boot Camp.pdf" target="_blank">Dec 27 - Kids Coding Bootcamp</a></li>
+            </ul> 
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
+        <div class="socialIcons">
+            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+          // Declare variables
+          var input, filter, ul, li, a, i, txtValue;
+          input = document.getElementById('myInput');
+          filter = input.value.toUpperCase();
+          ul = document.getElementById("myUL");
+          li = ul.getElementsByTagName('li');
+        
+          // Loop through all list items, and hide those who don't match the search query
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+          }
+        }
+    </script>
+
+    <script src="../javascript/app.js"></script>
+</body>
+</html>
