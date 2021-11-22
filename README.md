@@ -1,4 +1,4 @@
-﻿Mock brochure website
+﻿Mock website
 
 * Mobile-first
 * Responsive
