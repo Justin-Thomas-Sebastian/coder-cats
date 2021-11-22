@@ -1,7 +1,7 @@
 ﻿Mock brochure website
 
 * Mobile first
-* Responsive design
+* Responsive
 * CSS Flexbox
 * CSS Grid
 * jQuery
