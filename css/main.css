@@ -442,25 +442,29 @@ body {
 }
 
 .calendarContainer {
-    height: 70vh;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 20px auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--primaryLight); 
+    background-color: var(--primaryLight);
+    padding: 30px;
 }
 
 .calendarContainer iframe {
     border-radius: 5px;
 }
 
+.searchContainer {
+    margin: 30px;
+}
+
 /* HISTORY PAGE */
 .historySection {
     width: 50%;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 .historySection h1 {
@@ -491,8 +495,7 @@ body {
 .eventsContainer {
     padding: 50px 0;
     width: 100%;
-    margin: auto;
-    margin-top: 10vh;
+    margin: 0 auto;
     background-color: white;
 }
 
@@ -764,8 +767,7 @@ body {
     margin: 10px;
     background-color: var(--primaryLight);
     width: 750px;
-    min-width: 375px;
-    
+    min-width: 300px;
 }
 
 #tabs-1,#tabs-2,#tabs-3 {
@@ -773,7 +775,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .productContainer {
