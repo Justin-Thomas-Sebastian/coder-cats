@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS Media Queries-->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:767px)">
-    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:768px) and (max-width:1100px)">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/phone.css" media="only screen and (max-width:767px)">
+    <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:768px) and (max-width:1100px)">
 
     <style>
         body {
@@ -18,7 +18,7 @@
 <body>
     <header class="mainHeader">
         <div class="mobileNav">
-            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <a href="#"><img src="images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
             <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
             <nav class="mobileNavBar">
                 <ul class="mobileNavBarLinks">
@@ -56,22 +56,22 @@
         <form action="index.html">
             <div class="contactInputControl">
                 <label for="contactFirstName">First Name</label>
-                <input type="text" name="contactFirstName" required>
+                <input type="text" name="contactFirstName" id="contactFirstName" required>
             </div>
 
             <div class="contactInputControl">
                 <label for="contactLastName">Last Name</label>
-                <input type="text" name="contactLastName" required>
+                <input type="text" name="contactLastName" id="contactLastName" required>
             </div>
 
             <div class="contactInputControl">
-                <label for="contactFirstName">Email</label>
-                <input type="email" name="contactEmail" required>
+                <label for="contactEmail">Email</label>
+                <input type="email" name="contactEmail" id="contactEmail" required>
             </div>
 
             <div class="contactInputControl">
                 <label for="contactMessage">Message</label>
-                <textarea name="contactMessage"></textarea>
+                <textarea name="contactMessage" id="contactMessage"></textarea>
             </div>
 
             <input id="contactSubmit" type="submit" value="Send">
@@ -89,13 +89,13 @@
     <footer class="footer">
         <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
         <div class="socialIcons">
-            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
-            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
-            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+            <a href="#"><img src="images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="images/Twitter_white.svg" alt="twitch logo"></a>
         </div>
     </footer>
     
 
-    <script src="../javascript/app.js"></script>
+    <script src="javascript/app.js"></script>
 </body>
 </html>
