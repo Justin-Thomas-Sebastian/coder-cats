@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--CSS Media Queries-->
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/phone.css" media="only screen and (max-width:480px)">
-    <link rel="stylesheet" href="../css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/phone.css" media="only screen and (max-width:480px)">
+    <link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width:481px) and (max-width:1100px)">
 
     <style>
         .tutorialRow {
@@ -47,7 +47,7 @@
 <body>
     <header class="mainHeader">
         <div class="mobileNav">
-            <a href="#"><img src="../images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
+            <a href="#"><img src="images/hamburger.png" alt="Hamburger icon" class="hamburgerIcon" id="hamburgerIcon"></a>
             <h3 class="textIcon"><a href="index.html">CODER CATS</a></h3>
             <nav class="mobileNavBar">
                 <ul class="mobileNavBarLinks">
@@ -80,41 +80,39 @@
     
     <div id="stickyBuffer"></div>
 
-    
     <main class="tutorialContainer">
         <div class="tutorialRow">
-            <h1>Responsive Images</h1>
-            <p>Responsive images are used to ensure that images are compatible on different devices with differing screen sizes and resolutions. There are many ways to ensure that images in your web page are responsive. A common method is to use HTML tags and attributes that ensure that only the appropriate images are loaded on any given view of the web page. Though JavaScript and CSS can be used to dynamically resize images, this takes extra processing that can make page loading slower. The following examples show how to use the <em>picture</em> and <em>img</em>&nbsp;tags for responsive images.</p>
+            <h1>Read/Write Text Files in C#</h1>
+            <p>There are various ways to read and write text files using C#. The following examples shows how to use methods in the <b>System.IO.FILE</b> class to read and write text files.</p>
           
             <picture>
-                <source media="(max-width: 480px)" srcset="../images/Tutorials/PictureTagMobile.PNG">
-                <source media="(min-width: 481px)" srcset="../images/Tutorials/PictureTag.PNG">
-                <img src="../images/Tutorials/PictureTag.PNG" alt="C# Code">
+                <source media="(max-width: 480px)" srcset="images/Tutorials/ReadFileMobile.PNG">
+                <source media="(min-width: 481px)" srcset="images/Tutorials/ReadFile.PNG">
+                <img src="images/Tutorials/ReadFile.PNG" alt="C# Code">
             </picture>
             <br>
             <picture>
-                <source media="(max-width: 480px)" srcset="../images/Tutorials/ImgTagMobile.PNG">
-                <source media="(min-width: 481px)" srcset="../images/Tutorials/ImgTag.PNG">
-                <img src="../images/Tutorials/ImgTag.PNG" alt="C# Code">
+                <source media="(max-width: 480px)" srcset="images/Tutorials/WriteFileMobile.PNG">
+                <source media="(min-width: 481px)" srcset="images/Tutorials/WriteFile.PNG">
+                <img src="images/Tutorials/WriteFile.PNG" alt="C# Code">
             </picture>
             <h3>Additional Resources</h3>
             <ul>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">MDN - Responsive Images</a></li>
-                <li><a href="https://medium.com/@elad/a-complete-guide-for-responsive-images-b13db359c6c7" target="_blank">Elad Shecter - Complete Guide to Responsive Images</a></li>
-                <li><a href="https://www.w3schools.com/howto/howto_css_image_responsive.asp" target="_blank">W3Schools - How To - Responsive Images</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file" target="_blank">Microsoft Docs - How to read from a text file</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/file-system/how-to-write-to-a-text-file" target="_blank">Microsoft Docs - How to write to a text file</a></li>
             </ul>
-            <small><a href="../downloads/Responsive Images Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
+            <small><a href="downloads/ReadWrite Tutorial.pdf" target="_blank">Access tutorial in PDF</a></small>
         </div>
     </main>
 
     <footer class="footer">
         <div class="footerInfo">&#169;&nbsp; 2020 Coder Cats</div>
         <div class="socialIcons">
-            <a href="#"><img src="../images/Facebook_white.svg" alt="facebook logo"></a>
-            <a href="#"><img src="../images/Twitch_white.svg" alt="twitter logo"></a>
-            <a href="#"><img src="../images/Twitter_white.svg" alt="twitch logo"></a>
+            <a href="#"><img src="images/Facebook_white.svg" alt="facebook logo"></a>
+            <a href="#"><img src="images/Twitch_white.svg" alt="twitter logo"></a>
+            <a href="#"><img src="images/Twitter_white.svg" alt="twitch logo"></a>
         </div>
     </footer>
-    <script src="../javascript/app.js"></script>
+    <script src="javascript/app.js"></script>
 </body>
 </html>
