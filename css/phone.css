@@ -887,7 +887,6 @@ body {
     border-radius: 10px;
 }
 
-
 .officerDescription {
     background-color:var(--primaryLight);
     border-radius: 10px;
@@ -897,5 +896,3 @@ body {
 .officerDescription span {
     color: black;
 }
-
-
