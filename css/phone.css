@@ -270,69 +270,6 @@ body {
     width: 30px;
 }
 
-/* SIGN UP FORM */
-.formContainer {
-    width: 300px;
-    padding: 25px 0;
-    background-color: var(--primaryLight);
-    margin: auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-top: 50px;
-    flex-direction: column;
-}
-
-.formContainer h2 {
-    font-size: 1.3em;
-    margin-bottom: 14px;
-}
-
-.formContainer hr {
-    width: 90%;
-}
-
-.signUpForm {
-    display: flex;
-    flex-direction: column;
-}
-
-.signUpForm #signUpSubmit {
-    width: 50%;
-    color: var(--primaryLight);
-    background-color: var(--secondaryDark);
-    border-radius: 5px;
-    border: none;
-    padding: 5px 0;
-}
-
-.formControl{
-    padding: 10px 40px;
-}
-
-.formControl label {
-    display: block;
-}
-
-.formControl input{
-    width: 100%;
-}
-
-#submitContainer {
-    display:flex;
-    justify-content: center;
-}
-
-.phoneNumberBlocks {
-    display: flex;
-    justify-content: space-between;
-}
-
-.phoneNumberBlocks input {
-    width: 32%;
-}
-
 /* SURVEY */
 .surveyContainer {
     background: var(--primaryLight);
